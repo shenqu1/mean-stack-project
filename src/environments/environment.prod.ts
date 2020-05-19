@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: "http://nodeangular-env.eba-yc6egqfx.us-east-2.elasticbeanstalk.com/api"
 };
