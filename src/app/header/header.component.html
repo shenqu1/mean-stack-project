@@ -7,11 +7,11 @@
             routerLinkActive="mat-accent">New Post</a>
         </li>
         <li *ngIf="!userIsAuthenticated">
-            <a mat-button routerLink="/login" 
+            <a mat-button routerLink="/auth/login" 
             routerLinkActive="mat-accent">Login</a>
         </li>
         <li *ngIf="!userIsAuthenticated">
-            <a mat-button routerLink="/signup" 
+            <a mat-button routerLink="/auth/signup" 
             routerLinkActive="mat-accent">Signup</a>
         </li>
         <li *ngIf="userIsAuthenticated">

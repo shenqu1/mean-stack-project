@@ -6,11 +6,9 @@ const mongoose = require('mongoose');
 const postsRoutes = require("./routes/posts");
 const userRoutes = require("./routes/user");
 
-require("dotenv").config({path:'./config/keys.env'});
-
 const app = express();
 
-mongoose.connect(process.env.MONGO_DB_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_ATLAS_URL, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => {
         console.log("Connected to database!");
     })
